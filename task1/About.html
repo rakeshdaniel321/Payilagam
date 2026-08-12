@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+            
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: red;
+            cursor: default;
+        }
+        span{
+            cursor: default;
+            color: red;
+
+        }
+        p{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace  ;
+            padding: 20px;
+            text-transform: capitalize;
+            text-indent: 2px;
+            margin: 10px;
+            
+            background-color: black;
+        }
+        p:hover{
+            border: 1px solid rgb(51, 37, 37);
+            background-color: black;
+            color: white;
+            border-radius: 12px 50px 12px 50px;
+            box-shadow: 50px 13px 50px 13px rgb(120, 121, 120);
+        }
+        h3{
+              text-align: center;
+            padding: 20px;
+            color: red;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            cursor: default;
+        }
+        section{
+             font-size: 20px;
+            font-family: 'Courier New', Courier, monospace  ;
+            padding: 60px;
+            text-transform: capitalize;
+            text-indent: 2px;
+            /* border: 2px solid green; */
+
+           text-align: centers;
+            margin: 40px;
+            
+            background-color: black;
+
+        }
+        a:hover {
+            color:blue;
+            text-decoration: overline;
+
+        }
+        section:hover{
+            background-color: black;
+            border-radius: 80px 5px 80px 2px;
+            box-shadow:50px 13px 50px 13px rgb(120, 121, 120);
+
+        }
+
+           
+    </style>
 </head>
+
 <body>
-    <h1>About Page...</h1>
-    
+    <div id="head">
+        <h1>About Page...</h1>
+    </div>
+    <div>
+        <p>Hi, <span>I'm Rakesh,</span> a passionate web developer who enjoys creating clean, responsive, and
+            user-friendly websites. I am interested in modern web technologies and love turning ideas into simple and
+            attractive web experiences.</p>
+    </div>
+    <section>
+        <h3>Project Overview </h3>
+        <p>This project is a personal portfolio website created to showcase my skills, projects, social profiles, and
+            contact information. The website is designed using HTML5 and CSS3, with Web Awesome icons integrated to make
+            the navigation and interface more attractive and user-friendly.</p>
+        <p>
+            The main purpose of this portfolio is to provide a simple and professional way to introduce myself, display
+            my technical skills, showcase my projects, and provide links to my GitHub, LinkedIn, LeetCode, and Dev.to
+            profiles.
+        </p>
+
+    </section>
+
+    <section>
+        <h3>Technologies Used</h3>
+        <ul>
+            <li>HTML5 – Used to create the structure and content of the portfolio.</li>
+            <li>CSS3 – Used for styling, colors, spacing, layouts, hover effects, and responsive design.</li>
+            <li>Web Awesome – Used for adding scalable icons to the website.</li>
+            <li>Font Awesome – Used as the icon source/library for the icons available through Web Awesome.</li>
+            <li>Media Queries – Used to create different layouts for desktop and mobile screens.</li>
+        </ul>
+        <h4>Icons Used in the Project</h4>
+        <p>I used Web Awesome to add icons to my portfolio. Web Awesome provides the <wa-icon> component, which supports
+                scalable icons and Font Awesome icon libraries. Its documentation explains how to use icon names, icon
+                families, sizes, colors, and other options.</p>
+        <a href="https://webawesome.com/docs">Web Awesome Icon Documentation:</a>
+        <a href="https://fontawesome.com/search?q=dev&ic=free-collection">Font Awesome Icon</a>
+    </section>
+    <section>
+        <h3>Mobile Layout</h3>
+        <p>The mobile layout is designed for smaller screen sizes such as smartphones.</p>
+        <p>In the mobile view, the navigation links are replaced with icons and displayed vertically on the side of the
+            page. This makes the navigation compact and easier to access on a smaller screen.</p>
+        <p>The sections are also kept within a suitable width so that the content remains readable without requiring
+            unnecessary horizontal scrolling.</p>
+    </section>
+    <section>
+        <h3>Desktop Layout</h3>
+        <p>For desktop screens, the website uses a wider layout with more available screen space.</p>
+        <p>When the screen width reaches 1200px or more, a CSS media query changes the appearance of the website. The
+            desktop navigation links become visible, while the mobile icon navigation is hidden.</p>
+    </section>
 </body>
+
 </html>

@@ -1,237 +1,253 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Required: default theme + autoloader -->
     <!-- Required: default theme + autoloader -->
-<link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.11.0/styles/themes/default.css" />
-<script type="module" src="https://ka-f.webawesome.com/webawesome@3.11.0/webawesome.loader.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ka-f.webawesome.com/webawesome@3.11.0/styles/themes/default.css"
+    />
+    <script
+      type="module"
+      src="https://ka-f.webawesome.com/webawesome@3.11.0/webawesome.loader.js"
+    ></script>
 
-<!-- Recommended: utility classes ("CSS Utilities") -->
-<link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.11.0/styles/utilities.css" />
+    <!-- Recommended: utility classes ("CSS Utilities") -->
+    <link
+      rel="stylesheet"
+      href="https://ka-f.webawesome.com/webawesome@3.11.0/styles/utilities.css"
+    />
 
-<!-- Optional: CSS reset ("Native Styles") -->
-<link rel="stylesheet" href="https://ka-f.webawesome.com/webawesome@3.11.0/styles/native.css" />
-
+    <!-- Optional: CSS reset ("Native Styles") -->
+    <link
+      rel="stylesheet"
+      href="https://ka-f.webawesome.com/webawesome@3.11.0/styles/native.css"
+    />
 
     <title>Rakesh Portfoloio</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Courier New', Courier, monospace;
-             text-decoration: none; 
-        }
-        header{
-            background-color: black;
-            color:red;
-            height: 120px;
-           
-            padding: 30px;
-            text-align: center;
-            cursor: default;
-            margin-bottom: 40px;
-        }
-        
-        span{
-            color: white;
-        }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Courier New", Courier, monospace;
+        text-decoration: none;
+      }
+      header {
+        background-color: black;
+        color: red;
+        height: 120px;
 
-        nav{
-           
-            position: absolute;
-            bottom: 20px;
-            left: 10px;
-            margin-top: 20px;
-            padding: 20px;
-            display:flex;
-            flex-direction: column-reverse;  
-            gap:15px;
-            height: 100%;
-           
-           
-        }
+        padding: 30px;
+        text-align: center;
+        cursor: default;
+        margin-bottom: 40px;
+      }
 
-        .al{
-            font-size: 32px;
-            text-decoration: none;
-        }
-       
-        h2{
-            color:red;
-            padding-bottom: 12px;
-            text-align: center;
-        }
-        body{
-            background-color:aliceblue;
-        }
-        section{
-           
-
-            /* text-align: center; */
-            width: 65%;
-            margin-left: 100px;
-            padding: 10px;
-            margin-top: 30px;
-            
-            text-indent: 2px;
-            background-color: silver;
-            border-radius: 12px;
-            box-shadow: 12px 0px 2px 3px red;
-            
-        }
-        section:hover{
-             background-color: rgb(146, 145, 145);
-            border-radius: 12px;
-            text-decoration: none;
-            box-shadow: 12px 0px 2px 3px blue;
-            color:white
-
-        }
-        ul{
-            
-            padding: 20px;
-            font-size:15px;
-        }
-       footer{
-                 border: 2px solid black;
-                 background-color: black;
-                 color:red;
-                 padding: 20px;
-                 margin-top: 20px;
-                 font-size: 20px;
-                 font-style: italic;
-                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                 cursor: default;
-                 text-align: center;
-       }
-       
-       footer:hover{
+      span {
         color: white;
-       }
-      
-       #divd{
-        display:none;
-       }
-       @media (min-width:1200px){
-        nav{
-            display: none;
-        }
-        section{
-            /* border:3px solid white; */
-            background: black;
-            margin-left: 200px;
-            color:white;
-            border-radius: 20px 3px 20px 3px;
+      }
 
-        }
-        section:hover{
-                background: black;
-                color:rgb(189, 185, 185);
-                border-radius: 3px 20px 3px 20px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                box-shadow: 3px 2px 0px 12px rgb(15, 15, 56);
-                font-style: italic;
-                text-transform: capitalize;
+      nav {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        margin-top: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+        height: 100%;
+      }
 
-        }
-        
-        h1{
-           
-            display: inline;
+      .al {
+        font-size: 32px;
+        text-decoration: none;
+      }
 
+      h2 {
+        color: red;
+        padding-bottom: 12px;
+        text-align: center;
+      }
+      body {
+        background-color: aliceblue;
+      }
+      section {
+        /* text-align: center; */
+        width: 65%;
+        margin-left: 100px;
+        padding: 10px;
+        margin-top: 30px;
+
+        text-indent: 2px;
+        background-color: silver;
+        border-radius: 12px;
+        box-shadow: 12px 0px 2px 3px red;
+      }
+      section:hover {
+        background-color: rgb(146, 145, 145);
+        border-radius: 12px;
+        text-decoration: none;
+        box-shadow: 12px 0px 2px 3px blue;
+        color: white;
+      }
+      ul {
+        padding: 20px;
+        font-size: 15px;
+      }
+      footer {
+        border: 2px solid black;
+        background-color: black;
+        color: red;
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-style: italic;
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        cursor: default;
+        text-align: center;
+      }
+
+      footer:hover {
+        color: white;
+      }
+
+      #divd {
+        display: none;
+      }
+      @media (min-width: 1200px) {
+        nav {
+          display: none;
+        }
+        section {
+          /* border:3px solid white; */
+          background: black;
+          margin-left: 200px;
+          color: white;
+          border-radius: 20px 3px 20px 3px;
+        }
+        section:hover {
+          background: black;
+          color: rgb(189, 185, 185);
+          border-radius: 3px 20px 3px 20px;
+          font-family:
+            "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          box-shadow: 3px 2px 0px 12px rgb(15, 15, 56);
+          font-style: italic;
+          text-transform: capitalize;
         }
 
-        
-        #divd{
-            margin: 7px;
-            text-decoration: none;
-            display: block;
-            
+        h1 {
+          display: inline;
         }
-        a{
-            color:red;
-            margin-right: 35px;
-        }
-        a:hover,a:focus{
-            color: blue;
-        }
-        a:visited{
-            color: blueviolet;
-        }
-        a:active{
-            color:white;
-        }
-      
-        
 
-        body{
-            background-color: black;
+        #divd {
+          margin: 7px;
+          text-decoration: none;
+          display: block;
         }
-       }
+        a {
+          color: red;
+          margin-right: 35px;
+        }
+        a:hover,
+        a:focus {
+          color: blue;
+        }
+        a:visited {
+          color: blueviolet;
+        }
+        a:active {
+          color: white;
+        }
 
+        body {
+          background-color: black;
+        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-       
-
-    <wa-icon name="crown"></wa-icon> <h1>Rakesh <span>Daniel</span> </h1>
-    <div id="divd">
+      <wa-icon name="crown"></wa-icon>
+      <h1>Rakesh <span>Daniel</span></h1>
+      <div id="divd">
         <a href="http://rakesh-akm-portfolio.netlify.app/">Home</a>
         <a href="https://github.com/rakeshdaniel321">GitHub</a>
         <a href="https://hotel-booking-management-navy.vercel.app/">Projects</a>
-        <a href="https://www.linkedin.com/in/rakesh-daniel-8882b0406/">Linkedin</a>
-        <a href="https://leetcode.com/u/UMcwZV7E7K/" title="leetcode">Leetcode</a>
+        <a href="https://www.linkedin.com/in/rakesh-daniel-8882b0406/"
+          >Linkedin</a
+        >
+        <a href="https://leetcode.com/u/UMcwZV7E7K/" title="leetcode"
+          >Leetcode</a
+        >
         <a href="https://dev.to/rakeshdaniel321">Dev.to</a>
-    </div>
-             
+      </div>
     </header>
-   
+
     <nav>
-
-        <a class="al" href="http://rakesh-akm-portfolio.netlify.app/" title="Home"><wa-icon name="people-roof"></wa-icon></a>
-        <a class="al" href="https://hotel-booking-management-navy.vercel.app/" title="project"><wa-icon name="atlassian" family="brands"></wa-icon></a>
-        <a class="al" href="https://hotel-booking-management-navy.vercel.app/" title="project"><wa-icon name="atlassian" family="brands"></wa-icon></a>
-        <a class="al" href="https://github.com/rakeshdaniel321" title="GitHub"><wa-icon name="github" family="brands"></wa-icon></a>
-        <a class="al" href="https://www.linkedin.com/in/rakesh-daniel-8882b0406/" title="linkedin"><wa-icon name="linkedin" family="brands"></wa-icon></a>
-        <a class="al" href="https://leetcode.com/u/UMcwZV7E7K/" title="leetcode"><wa-icon name="leanpub" family="brands"></wa-icon></a>
-        <a class="al" href="https://dev.to/rakeshdaniel321" title="Dev.to"><wa-icon name="dev" family="brands"></wa-icon></a>
-        
+      <a class="al" href="http://rakesh-akm-portfolio.netlify.app/" title="Home"
+        ><wa-icon name="people-roof"></wa-icon
+      ></a>
+      <a
+        class="al"
+        href="https://hotel-booking-management-navy.vercel.app/"
+        title="project"
+        ><wa-icon name="atlassian" family="brands"></wa-icon
+      ></a>
+      <a
+        class="al"
+        href="https://hotel-booking-management-navy.vercel.app/"
+        title="project"
+        ><wa-icon name="atlassian" family="brands"></wa-icon
+      ></a>
+      <a class="al" href="https://github.com/rakeshdaniel321" title="GitHub"
+        ><wa-icon name="github" family="brands"></wa-icon
+      ></a>
+      <a
+        class="al"
+        href="https://www.linkedin.com/in/rakesh-daniel-8882b0406/"
+        title="linkedin"
+        ><wa-icon name="linkedin" family="brands"></wa-icon
+      ></a>
+      <a class="al" href="https://leetcode.com/u/UMcwZV7E7K/" title="leetcode"
+        ><wa-icon name="leanpub" family="brands"></wa-icon
+      ></a>
+      <a class="al" href="https://dev.to/rakeshdaniel321" title="Dev.to"
+        ><wa-icon name="dev" family="brands"></wa-icon
+      ></a>
     </nav>
-     <section>
-        <h2> Skill</h2>
-        <ul>
-            <li>HTML5 – Creating well-structured web pages </li>
-            <li>CSS3 – Designing responsive and attractive layouts</li>
-            <li>JavaScript – Adding interactive and dynamic features</li>
-            <li>Git & GitHub – Managing and sharing projects</li>
-        </ul>
-      </section>
-      <section>
-        <h2>
-            Projects
-        </h2>
-        <ul>
-            <li>Portfolio</li>
-            <li>Hotel-booking-management </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Contact</h2>
-          <p>Email
-
-        body{
-        : rakeshdaniel321@gmail.com</p>
-          <p>Address: Tirunelveli,TamilNadu</p>
-      </section>
+    <section>
+      <h2>Skill</h2>
+      <ul>
+        <li>HTML5 – Creating well-structured web pages</li>
+        <li>CSS3 – Designing responsive and attractive layouts</li>
+        <li>JavaScript – Adding interactive and dynamic features</li>
+        <li>Git & GitHub – Managing and sharing projects</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>Portfolio</li>
+        <li>Hotel-booking-management</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>Email body{ : rakeshdaniel321@gmail.com</p>
+      <p>Address: Tirunelveli,TamilNadu</p>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Payilagam Batch Rakesh Daniel  </p>
+      <p>&copy; 2026 Payilagam Batch Rakesh Daniel</p>
     </footer>
-</body>
+  </body>
 </html>
