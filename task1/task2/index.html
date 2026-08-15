@@ -1,67 +1,271 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-        body{
-            background-color: black;
-            color: white;
 
-        }
-        .container{
+        body {
             background-color: white;
             color: black;
-            border: 2px solid red;
+            background: linear-gradient(red, blue);
+        }
+
+        .container {
+            background-color: white;
+            color: black;
+
             height: 100vh;
-            width: 65vw;
+            width: 70vw;
             margin: auto;
             display: grid;
             grid-template-columns: 1fr 2fr;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         }
-        .left{
-            border: 2px solid blue;
-            
+
+        .left {
+            /* border: 2px solid blue; */
+            background-color: rgb(4, 0, 59);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        .right{
-            border: 5px solid green;
+
+        .right {
+            /* border: 5px solid green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-left: 10px;
+
         }
-        .image{
+
+        .image {
             text-align: center;
-
+            padding: 5px;
         }
 
-        img{
-            padding: 20px;
-            width: 180px;
-            height: 180px;
+        img {
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-
         }
-        img:hover{
+
+        /* img:hover {
             box-shadow: 20px 2px 40px seashell;
-        }
-        
+        } */
+        .contact {
 
+            padding-left: 10px;
+        }
+
+        .skills {
+            /* border: 2px solid yellow; */
+            padding-left: 30px;
+        }
+
+        h4 {
+            margin-bottom: 4px;
+        }
+
+        .hskill {
+            padding-left: 32%;
+            margin-bottom: 6px;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin-bottom: 2px;
+        }
+
+        li {
+            margin-top: 2px;
+        }
+
+        a {
+            color: red;
+
+        }
+
+        a:hover,
+        a:focus {
+            color: blue;
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:active {
+            color: green;
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+        h4 {
+            margin-bottom: 4px;
+        }
+
+        p {
+            margin-top: 2px;
+
+        }
+
+
+
+        table,
+        th,
+        td {
+            border: 2px solid;
+            width: 27vw;
+            border-collapse: collapse;
+            text-transform: capitalize;
+            padding-left: 27px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="left">
             <div class="image">
-                <img src="6305405762179633820.jpg" alt="Rakesh image">
+                <img src="6305405762179633820.jpg" alt="Rakesh image" />
             </div>
-            
+
+            <div class="contact">
+                <h4>Email:
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=rakeshdaniel321@gmail.com&su=Hello+Rakesh,+Visited+Your+Portfolio&tf=cm"
+                        target="_blank" rel="navigate">rakeshdaniel@gmail.com</a>
+                </h4>
+                <h4>Mobile No: +91 63797-69075</h4>
+                <h4>Location: Tirunelveli,TamilNadu -627654</h4>
+                <h4>
+                    GitHub:
+                    <a href="https://github.com/rakeshdaniel321">github.com/rakeshdaniel321</a>
+                </h4>
+                <h4>
+                    Portfolio:
+                    <a href="http://rakesh-akm-portfolio.netlify.app/">RakeshPortFolio.com</a>
+                </h4>
+                <h4>
+                    leetcode:
+                    <a href="https://leetcode.com/u/UMcwZV7E7K/">leetcode.com</a>
+                </h4>
+                <h4>
+                    Linkedin: <a href="https://www.linkedin.com/feed/">Linkedin</a>
+                </h4>
+                <h4></h4>
+            </div>
+            <section class="skills">
+                <h3 class="hskill">Skills</h3>
+                <h4>Programing Language</h4>
+                <ul>
+                    <li>html5</li>
+                    <li>css3</li>
+                    <li>javascript(ES6+)</li>
+                </ul>
+                <h4>Library & framework</h4>
+                <ul>
+                    <li>react.js</li>
+                    <li>express.js</li>
+                    <li>nodejs</li>
+                </ul>
+                <h4>Database & Tools</h4>
+                <ul>
+                    <li>mysql</li>
+                    <li>mongoose</li>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Postman</li>
+                    </ul>
+                </ul>
+            </section>
+            <hr />
         </div>
         <div class="right">
+            <h1>Rakesh Daniel</h1>
+            <h3>Personal Summary</h3>
+            <p>
+                Motivated Full-Stack Web Developer (Fresher) with a strong foundation
+                in the MERN stack and Next.js.
+                Proven ability to build scalable web applications through solo
+                projects assignments. A quick learner and tech
+                enthusiast dedicated to writing clean code.
+            </p>
+            <section>
+                <h3 style="margin-bottom:4px ;">Projects</h3>
+                <h4>1. Secure & Scalable User Login System (Backend)</h4>
+                <p>
+                    Engineered a high-availability authentication system using Node.js
+                    and Express.js. Scalability & Traffic Management: Implemented the
+                    Token Bucket Algorithm for API Rate Limiting and managed heavy
+                    background jobs using Redis and BullMQ distributed queues.<br />
+                    <span>GitHub Repo link: </span><a href="https://github.com/rakeshdaniel321/Pradeep-Mobiles-.git"
+                        target="_blank" rel="navigate">Backend Scalability Code</a>
+                </p>
+                <h4>2. Payilagam Training Insititute</h4>
+                <p>
+                    This course joining 03/08/2026 - continue first task Portfolio
+                    project. second task this resume.<br />
+                    <span>Portfolio Poject: </span><a href="https://payilagam-1.onrender.com/" target="_blank"
+                        rel="navigate">Task1</a>
+                </p>
+                <h4>3. Portfolio App</h4>
+                <p>
+                    Interactive Portfolio & Branding Site | Live Link Developed a
+                    dynamic React.js portfolio integrating Framer Motion for smooth,
+                    interactive animations and enhanced UI/UX engagement.<br />
+                    <span>Hosting Link: </span><a href="http://rakesh-akm-portfolio.netlify.app/" target="_blank"
+                        rel="navigate">Rakesh Portfolio</a>
+                </p>
+                <h3>Certification</h3>
+                <p>
+                    Masterclass in Full Stack Development | NoviTech R&D Pvt. Ltd.
+                <details>
+                    <ul>
+                        <li>Successfully completed a 30-day intensive masterclass covering core Full Stack Development
+                            concepts.</li>
+                        <li>Mentored by Mr. S. Bharani Chandar (Software Developer, NoviTech) focusing on modern MERN
+                            stack workflows.</li>
+                    </ul>
+                </details>
+                <span>Certificated visit: </span><a href="RAKESH DANIEL.jpg" target="_blank" rel="navigate">page</a>
+                </p>
+            </section>
+            <h4>Education</h4>
+            <p>2023-2026 | Bachelor of Computer Application(BCA)</p>
+            <p>Sri Sankara Bhavathi Arts And Sience College,Thootukudi (MSU)</p>
 
+
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hobbies</th>
+                            <th>Language</th>
+                        </tr>
+                    <tbody>
+                        <tr>
+                            <td>Problem Solving</td>
+                            <td>English</td>
+                        </tr>
+                    </tbody>
+                    </thead>
+                </table>
+            </div>
         </div>
-    </div>
 </body>
+
 </html>
