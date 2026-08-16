@@ -1,0 +1,286 @@
+<!-- Google Landingpage clone -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tab</title>
+    <script src="https://kit.fontawesome.com/f9425a5d7b.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding-right: 2px;
+        }
+
+        a {
+            color: black;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #profile {
+            border-radius: 50%;
+        }
+
+        #main {
+            /* border: 3px solid black; */
+            height: 300px;
+            width: fit-content;
+            margin: auto;
+
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center; */
+        }
+
+        .bottom {
+            /* border: 3px solid green; */
+            height: 25vh;
+            width: 50vw;
+            margin: auto;
+            position: relative;
+            top: 18vh;
+            background-color: rgb(239, 244, 252);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 17px;
+            margin-top: 30px;
+
+        }
+
+        footer {
+            display: flex;
+            gap: 40vw;
+            margin-bottom: 10px;
+
+        }
+
+        .landingpageimgcontainer {
+            /* border: 3px solid; */
+            display: flex;
+            justify-content: center;
+        }
+
+        #Share {
+            position: absolute;
+            top: 32vh;
+            left: 68vw;
+            border-radius: 50%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(239, 244, 252);
+
+        }
+        
+
+        #SearchBor {
+            /* border: 1px solid yellow; */
+            border-radius: 30px;
+            width: fit-content;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+
+        input {
+
+            border: none;
+            width: 40vw;
+            outline: none;
+
+        }
+
+        #sec {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .ai {
+            background-color: rgb(239, 244, 252);
+            display: flex;
+            gap: 2px;
+
+            border-radius: 20px;
+            padding: 10px 7px;
+        }
+
+        .ai:hover {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+        }
+
+        #btndiv {
+            position: relative;
+
+            top: 5vh;
+            text-align: center;
+
+
+        }
+
+        #btndiv button {
+            border-radius: 50%;
+            padding: 15px;
+            border: none;
+        }
+
+        #head {
+            display: flex;
+            gap: 35vw;
+            padding: 10px 0px 0px 13px;
+
+        }
+
+        .hchild {
+
+            height: 15vh;
+            margin: 0px 20px 0px 20px;
+            padding: 10px;
+            background-color: white;
+
+        }
+
+        #fb:hover {
+            background-color: rgb(239, 244, 252);
+            cursor: pointer;
+
+        }
+
+        .botlogo {
+
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            /* border: 2px solid red; */
+        }
+
+        /* .botlogo:hover{
+            background-color: aliceblue;
+        } */
+
+        .fcontent {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        #btndiv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 8vw;
+            margin: auto;
+            padding: 19px 0px 10px 0px;
+
+            cursor: pointer;
+
+        }
+
+        #btndiv:hover {
+            background-color: rgb(239, 244, 252);
+            border: 1px solid rgb(239, 244, 252);
+            border-radius: 12px;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="right">
+            <a href="">Gmail</a>
+            <a href="">Images</a>
+            <img src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" />
+            <img src="https://lh3.googleusercontent.com/ogw/AF2bZygpZ2FQIvfF3XZT6_kxahTRYIZJWMa0RTJGqrlCNSyJFA=s32-c-mo"
+                alt="" id="profile" />
+        </div>
+    </header>
+    <div id="main">
+        <div class="landingpageimgcontainer"> <a
+                href=https://www.google.com/search?q=India+Independence+Day&oi=ddle&noiga=1&ct=456448790&hl=en-GB&si=APenkKlisoOXLiCMwraINHtdqOQii4CK9kOlkQc8Apn-pS60ybTU_VoocAB35KVB3Z-ryR8uTvdbSHzZKHMNamV8K91IImXi2e-c-tSeJ0fzc5y4jwHZwvsdfS9ZhjOupOs4iwA5FIHFPwAAhGxTkj-dxtBv9DVbp9ex_rfwlRNEyvYLjoiDFNY%3D&source=doodle-ntp&ved=0ahUKEwjP9rnUxqKWAxVwIzQIHeM-BsAQPQgB"https://www.google.com/search?q=India+Independence+Day&oi=ddle&noiga=1&ct=456448790&hl=en-GB&si=APenkKlisoOXLiCMwraINHtdqOQii4CK9kOlkQc8Apn-pS60ybTU_VoocAB35KVB3Z-ryR8uTvdbSHzZKHMNamV8K91IImXi2e-c-tSeJ0fzc5y4jwHZwvsdfS9ZhjOupOs4iwA5FIHFPwAAhGxTkj-dxtBv9DVbp9ex_rfwlRNEyvYLjoiDFNY%3D&source=doodle-ntp&ved=0ahUKEwjP9rnUxqKWAxVwIzQIHeM-BsAQPQgB"
+                target="_blank" rel="navigation" title="India Independence Day 2026">
+                <img src="Indi.png" alt="India Independence Day" rel="navigate" /></a>
+            <span id="Share"><i class="fa-solid fa-share-nodes"></i></span>
+        </div>
+        <div id="sec">
+            <div style="padding-left: 15px;" id="SearchBor">
+                <i id="plus" class="fa-solid fa-plus"></i>
+                <input style="font-size: 16px;" type="text" placeholder="Ask Google">
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+                <span class="ai">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span> AI Mode</span>
+                </span>
+            </div>
+
+        </div>
+
+        <div id="btndiv">
+            <button><i class="fa-solid fa-plus"></i></button>
+            <div style="font-size: 15px; margin-top: 8px;">Add shortcut</div>
+        </div>
+
+
+
+    </div>
+
+    <div class="bottom">
+        <footer>
+            <div id="head">
+                <span>continue with these tabs</span>
+                <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+            </div>
+
+        </footer>
+
+        <div class="hchild">
+            <div id="fb">
+                <div class="botlogo">
+                    <div style="font-size: 35px;">
+                        <i class="fa-brands fa-telegram" style="color: rgb(116, 192, 252);"></i>
+                    </div>
+                    <div class="fcontent">
+                        <span>PRPBatch6 Vijay</span>
+                        <span style="font-size: 12px;">
+                            web.telegram.org-RAKESHbAKM-You visit often</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
