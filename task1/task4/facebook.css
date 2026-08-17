@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+#contanier {
+  /* border: 1px solid crimson; */
+  height: 80vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer {
+  height: 20vh;
+  /* border: 1px solid cyan; */
+  line-height: 16px;
+  word-spacing: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 17px;
+  padding: 10px;
+  direction: ltr;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+footer span {
+  padding-top: 5px;
+  padding-left: 80px;
+}
+#left {
+  /* border: 2px solid blue; */
+  height: 100%;
+  display: grid;
+  grid-template-columns: 7cm 1fr;
+}
+#right {
+  /* border: 2px solid green; */
+  height: 100%;
+}
+#logo {
+  /* border: 3px solid firebrick; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 43px;
+  cursor: default;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Courier New";
+  font-style: bold;
+  cursor: text;
+}
+#images {
+ 
+   cursor: default;
+   /* border: 3px solid gold; */ 
+}
+#images img {
+
+  width: 110%;
+  height: 105%;
+  position: relative;
+  right: 60px;
+  cursor: default;
+}
+#logincontainer {
+  /* border: 4px solid; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+input {
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border: 1px solid rgb(208, 211, 214);
+  color: black;
+  outline: none;
+  padding: 10px;
+  font-size: 17px;
+}
+
+#forbtn {
+  background-color: white;
+  border: none;
+  color: black;
+  height: 36px;
+  margin: 10px;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: 530;
+}
+#forbtn:hover {
+  background-color: rgb(238, 239, 240);
+}
+#cnabtn {
+  background-color: white;
+  border: 2px solid blue;
+  border-radius: 25px;
+  color: blue;
+  height: 45px;
+  margin: 10px;
+  font-size: 17px;
+  font-weight: 800;
+}
+#cnabtn:hover {
+  background-color: rgb(238, 239, 240);
+}
