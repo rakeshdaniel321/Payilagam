@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: default;
+  /* background-color: black;
+  color: white; */
+}
+#contanier {
+  /* border: 1px solid crimson; */
+  height: 80vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer {
+ 
+  background: black;
+  color: white;
+  height: 20vh;
+  /* border: 1px solid cyan; */
+}
+
+#left {
+  /* border: 2px solid blue; */
+  height: 100%;
+  display: grid;
+  grid-template-columns: 7cm 1fr;
+  background-color: black;
+  color: white;
+}
+#right {
+  /* border: 2px solid green; */
+  height: 100%;
+}
+#logo {
+  /* border: 3px solid firebrick; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 38px;
+  cursor: default;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Courier New";
+  font-style: bold;
+  cursor: text;
+}
+#images {
+  cursor: default;
+  /* border: 3px solid gold; */
+}
+#images img {
+  width: 90%;
+  height: 60%;
+  position: relative;
+  right: 60px;
+  top: 10px;
+  cursor: default;
+}
+#logincontainer {
+  /* border: 4px solid; */
+  background-color: rgb(41, 42, 46);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+#facebook {
+  background-color: rgb(41, 42, 46);
+  border: none;
+  color: white;
+  height: 36px;
+  margin: 10px;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: 530;
+}
+
+input {
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border: 1px solid rgb(208, 211, 214);
+  color: white;
+  background-color: rgb(41, 42, 46);
+  outline: none;
+  padding: 10px;
+  font-size: 17px;
+}
+
+#forbtn {
+  background-color: rgb(41, 42, 46);
+  border: none;
+  color: white;
+  height: 36px;
+  margin: 10px;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: 530;
+}
+#forbtn:hover {
+  background-color: rgb(41, 42, 46);
+}
+#cnabtn {
+  background-color: rgb(41, 42, 46);
+  border: 2px solid rgb(49, 114, 194);
+  border-radius: 25px;
+  color: rgb(49, 114, 194);
+  height: 45px;
+  margin: 10px;
+  font-size: 17px;
+  font-weight: 800;
+}
+#cnabtn:hover {
+  background-color: rgb(41, 42, 46);
+}
